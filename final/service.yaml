@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: hello-world # Indented 2 spaces under metadata
+spec:
+  type: NodePort    # Indented 2 spaces under spec
+  selector:         # Indented 2 spaces under spec
+    app: hello-world # Indented 4 spaces under selector
+  ports:            # Indented 2 spaces under spec
+    - port: 5000    # Indented 4 spaces under ports (the hyphen is part of this indentation level)
+      targetPort: 5000 # Indented 6 spaces under ports (or 2 spaces relative to the hyphen for the port)
